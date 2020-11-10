@@ -8,10 +8,10 @@
     <title>Pistol</title>
   </head>
   <body>
-    <script src="./three/three.min.js"></script>
-    <script src="./three/OrbitControls.js"></script>
-    <script src="./three/GLTFLoader.js"></script>
-    <script src="./three/postprocessing.min.js"></script>
+    <script src="three/three.min.js"></script>
+    <script src="three/OrbitControls.js"></script>
+    <script src="three/GLTFLoader.js"></script>
+    <script src="three/postprocessing.min.js"></script>
     <script>
       let scene, camera, renderer, controls, composer;
 
@@ -29,7 +29,7 @@
         document.body.appendChild(renderer.domElement);
 
         let loader = new THREE.GLTFLoader();
-        loader.load("./assets/scene.gltf", function(gltf) {
+        loader.load("assets/scene.gltf", function(gltf) {
           let mesh = gltf.scene.children[0];
           mesh.scale.set(100,100,100);
           scene.add(gltf.scene);
